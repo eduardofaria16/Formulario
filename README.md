@@ -24,9 +24,9 @@
             <input type="submit" value="Enviar">
 
             <?php
-include('conexao.php');
+            include('conexao.php');
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+           if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'];
     $telefone = $_POST['telefone'];
     $email = $_POST['email'];
@@ -38,10 +38,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo "Erro: " . "<br>" . $conn->error;
     }
-}
+    }
 
-$conn->close();
-?>
+         $conn->close();
+     ?>
         </form>
         </section>
     </header>
